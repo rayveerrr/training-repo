@@ -7,19 +7,38 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="header">
+        <div class="nav-bar">
+            <ul>
+                <li> <a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li class="contacts-dropdown">
+                    <a href="#contacts">Contacts</a>
+                    <ul class="contacts-menu">
+                        <li><a href="">facebook</a></li>
+                        <li><a href="">instagram</a></li>
+                        <li><a href="">tiktok</a></li>
+                    </ul>
+                </li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+        </div>
+    </div>
     <div class="main">
         <form class="login-form">
-            <h1> LOGIN </h1>
-            <div>
-                <label for="username">Username</label>
-                <input type="text" name="username" id="username">
-            </div>
-            <div>
+            <div class="form-container">
+                <h2> LOGIN </h2>
+                <label for="username">Username</label> <!-- the syntax "for=""" of a label can be used to immediately go the textbox without clicking the textbox itself by using the ID of the Textbox -->
+                <div>
+                    <input type="text" name="username" id="username">
+                </div>
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
-            </div>
-            <div>
-                <button type="submit">Login</button>
+                <div>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div>
+                    <button type="submit">Login</button>
+                </div>
             </div>
         </form>
     </div>
