@@ -43,3 +43,42 @@ body{
 .main-container .box6{
     background-color: darkolivegreen;
 }
+
+.dropdown{
+    position: relative;
+    cursor: pointer;
+    width: 15%;
+}
+
+.dropdown a{ /* a tag is an inline element it only takes its content width you need to display it as block or inline-block  */
+    display: block;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    background-color: aqua;
+    color: #000;
+}
+
+.dropdown a:hover{
+    background-color: brown;
+    color: #fff
+}
+
+.dropdown .dropdown-list{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+    width: 100%;
+}
+
+.dropdown .dropdown-list a:hover{
+    font-size: 1.5em;
+}
+
+
+
+
