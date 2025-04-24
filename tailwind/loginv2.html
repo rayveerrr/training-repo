@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="">
+        <div class="h-16 w-full bg-green-500 flex"> <!-- navbar-->
+            <div class="flex-1">
+                <div class="w-52 h-full">
+                    <img class="w-full h-full" src="../img/luffy.jpg" alt="Luffy logo">
+                </div>
+            </div>
+            <div class="flex-1 w-3/4 h-full m-0 p-0 flex justify-end items-center">
+                <ul class="flex justify-between h-full w-1/2">
+                    <li class="flex-1 h-full bg-green-500 hover:bg-green-900 flex justify-center items-center border-l border-white hover:text-white hover:cursor-pointer"><a href="#home">Home</a></li>
+                    <li class="flex-1 h-full bg-green-500 flex justify-center items-center border-l border-white hover:bg-green-900 hover:text-white hover:cursor-pointer">Services</li>
+                    <li class="flex-1 h-full bg-green-500 flex justify-center items-center border-l border-white hover:bg-green-900 hover:text-white hover:cursor-pointer">Contacts</li>
+                    <li class="flex-1 h-full bg-green-500 flex justify-center items-center border-l border-white hover:bg-green-900 hover:text-white hover:cursor-pointer">Login</li>
+                </ul>
+            </div>
+        </div> <!-- navbar closing tag-->
+        <div class="h-[75vh] w-full flex justify-center items-center"> <!-- main content -->
+            <div class="h-1/2 w-1/4 border border-green-700 rounded-md shadow-lg flex flex-col justify-center items-center">
+                <form action="" class="w-3/4 space-y-3">
+                    <h1 class="font-sans text-green-500 text-2xl">Login</h1>
+                    <div class="">
+                        <label for="email" class="block">Email/Username</label>
+                        <input type="text" id="email" class="w-full p-1 border border-green-500 rounded-sm focus:outline-none focus:border-green-700">
+                    </div>
+                    <div class="">
+                        <label for="password" class="block">Password</label>
+                        <input type="password" id="password" class="w-full p-1 border border-green-500 rounded-sm focus:outline-none focus:border-green-700">
+                    </div>
+                    <div class="flex justify-center">
+                        <input type="button" value="Login" class="bg-green-500 rounded-md w-1/2 p-1 hover:bg-green-900 hover:text-white hover:cursor-pointer">
+                    </div>
+                </form>
+            </div>
+        </div> <!-- main content closing tag-->
+        <div class="h-48 w-full bg-green-900 flex"> <!-- footer -->
+            <div class="flex-1 flex flex-col justify-center items-center">
+                <p class="font-sans text-lg text-white">Social Media</p>
+                <ul>
+                    <li class="font-sans text-white">Facebook</li>
+                    <li class="font-sans text-white">Instagram</li>
+                    <li class="font-sans text-white">X</li>
+                    <li class="font-sans text-white">Tiktok</li>
+                </ul>
+            </div>
+            <div class="flex-2 flex flex-col justify-center items-center">
+                <p class="font-sans text-xl text-white">Sponsors</p>
+                <ul class="flex justify-evenly w-full">
+                    <li class="font-sans text-white">Nike</li>
+                    <li class="font-sans text-white">Adidas</li>
+                    <li class="font-sans text-white">Converse</li>
+                    <li class="font-sans text-white">Anta</li>
+                    <li class="font-sans text-white">Puma</li>
+                    <li class="font-sans text-white">Rebook</li>
+                    <li class="font-sans text-white">New Balance</li>
+                    <li class="font-sans text-white">Ramboo</li>
+                </ul>
+            </div>
+            <div class="flex-1 flex justify-center items-center font-sans text-white">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Di ko na alam ilalagay ko haha Corrupti facilis quia ducimus, illum itaque temporibus sunt odio aut nemo animi corporis soluta! Non voluptates enim libero consectetur ut fugiat fuga.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
