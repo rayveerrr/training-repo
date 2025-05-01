@@ -1,0 +1,60 @@
+variable
+var name = "Reyver" --var is replaceable you can change its value by overiding it.
+let num = 1234 --you cannot overide let by declaring let again you can only overide it by calling its variable name only.
+const char = "char" --you cannot overide const as its variable cannot be change its constant.
+
+data types
+var name = 'reyver'
+'' --string
+
+var age = 25
+123 --number
+
+empty
+null --object
+
+const obj = {
+    surname = 'Bautista',
+    siblings = 6,
+    work = 'I.T'
+}
+--sample how to get object value
+obj.surname
+obj.siblings
+obj.work
+{} -- object
+
+[] --array
+const arrFruits = ["Apple", "Banana", "Chico", "Dalandan"]; --array index starts with 0
+--how to call array index?
+arrFruits[0];
+arrFruits[1];
+arrFruits[2];
+arrFruits[3];
+
+true --boolean
+
+
+--function
+--how to create a function
+function walk(animal) {
+    return `the ${animal} is walking`;
+}
+
+walk('Dog');
+
+--other way of declaring a function
+const walkingFunction = function(animal2) {
+    return `the ${animal2} is walking`;
+}
+
+walkingFunction('Cat');
+
+--arrow function called as es6 or ecmascript 6
+const walkFunction2 = (name) => {
+    return `the ${name} is walking`;
+}
+
+walkFunction2('Pig');
+
+--when declaring an array, object, and function we must always use const or let.
