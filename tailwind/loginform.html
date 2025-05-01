@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Login</title>
+</head>
+<body>
+    <div class=""> <!-- main container--> 
+        <div class="w-full h-16 bg-emerald-600 fixed flex"> <!-- Navbar -->
+            <div class=" flex-1">
+                <div class="w-36 h-full">
+                    <img src="../img/luffy.jpg" alt="logo" class="w-full h-full" >
+                </div>
+            </div>
+            <div class="flex-1 flex justify-end">
+                <div class="flex h-full w-1/2 justify-end items-center">
+                    <ul class="flex h-full w-full justify-around">
+                        <li class="w-full h-full font-sans text-lg border-1 border-white">Home</li>
+                        <li class="font-sans text-lg border-1 border-white w-full h-full">Service</li>
+                        <li class="font-sans text-lg border-1 border-white w-full h-full">Contact</li>
+                        <li class="font-sans text-lg border-l border-white w-full h-full">Login</li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- Navbar -->
+        <div class="flex"> <!-- Main Container -->
+            <div class="flex-1basis-1 h-[75vh] mt-16 flex justify-center items-center">
+                <div class="w-1/2 h-[50%] border-neutral-700 rounded-xl">
+                    <img src="../img/luffy.jpg" alt="" class="w-full h-full rounded-xl">
+                </div>
+            </div>
+            <div class="flex-1 basis-1 h-[75vh] mt-16 flex justify-center items-center">
+                <div class="w-1/2 h-[75%] p-0 flex justify-center items-center">
+                    <form action="" method="post" class="w-full h-full m-0 p-0 bg-slate-600 rounded-xl flex flex-col justify-center items-center space-y-32">
+                        <div class="w-3/4 m-0 p-0">
+                            <label for="email" class="block my-2">Email/Username</label>
+                            <input type="text" id="email" class="w-full text-sm p-1 border-none rounded-md bg-white focus:outline-none">
+                        </div>
+                        <div class="w-3/4 m-0 p-0">
+                            <label for="password" class="block my-2">Password</label>
+                            <input type="password" id="password" class="w-full text-sm p-1 border-none rounded-md bg-white focus:outline-none">
+                        </div>
+                        <input type="submit" value="Login" class="bg-blue-400 p-1 rounded-lg w-1/2 mt-4">
+                    </form>
+                </div>
+            </div>
+        </div> <!-- Main Container -->
+        <div></div> <!-- Footer -->
+    </div>
+    
+</body>
+</html>

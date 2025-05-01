@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/flowbite@latest/dist/flowbite.js"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                brand: '#ff6363',
+              },
+              fontFamily: {
+                sans: ['Poppins', 'sans-serif'],
+              }
+            }
+          }
+        }
+      </script>
+
+    <title>Tailwind CSS</title>
+</head>
+<body class="m-0 p-0 box-border font-sans bg-gray-100">
+    <div class="w-full h-10 rounded-md bg-purple-300 border-2 border-cyan-900 my-10 flex justify-center items-center">
+        <h1 class="text-blue-900 font-mono font-extrabold">Hello, it's me!</h1>
+    </div>
+
+    <div class="flex flex-row justify-around">
+        <div class="bg-green-300 border-gray-950 border-2 rounded-full w-10 h-10"></div>
+        <div class="bg-blue-300 border-gray-950 border-2 rounded-full w-10 h-10"></div>
+        <div class="bg-red-300 border-gray-950 border-2 rounded-full w-10 h-10"></div>
+    </div>
+
+    <div>
+        <input type="button" value="Button" id="dropdownbutton" data-dropdown-toggle="dropdown"  class="relative w-44 rounded-sm bg-blue-300 text-gray-900 cursor-pointer border-2 border-gray-800 hover:bg-blue-700 hover:text-white">
+        <ul id="dropdown" aria-labelledby="dropdownbutton" class="w-44 text-center border-1 shadow-lg absolute top-[100%] left-0 z-10 hidden">
+            <li><a href="#january" class=" block bg-slate-200 text-blue-950 hover:bg-blue-950 hover:text-slate-200 hover:text-lg hover:p-1">January</a></li>
+            <li><a href="#february" class=" block bg-slate-200 text-blue-950 hover:bg-blue-950 hover:text-slate-200 hover:text-lg hover:p-1">February</a></li>
+            <li><a href="#march" class=" block bg-slate-200 text-blue-950 hover:bg-blue-950 hover:text-slate-200 hover:text-lg hover:p-1">March</a></li>
+            <li><a href="#april" class=" block bg-slate-200 text-blue-950 hover:bg-blue-950 hover:text-slate-200 hover:text-lg hover:p-1">April</a></li>
+        </ul>
+    </div>
+
+    <div class="w-[50vw] h-[50vh] border shadow-md bg-blue-200 m-auto rounded-3xl p-0 ">
+        <form action="" method="post" class="w-full h-full flex flex-col items-center justify-center">
+            <div class="">
+                <label for="username">Username</label>
+                <div>
+                    <input type="text" id="username" class="my-1 w-100 text-base bg-slate-300 rounded-sm border border-black focus:border-2 focus:border-blue-500 focus:outline-none">
+                </div>
+                <label for="password">Password</label>
+                <div>
+                    <input type="password" id="password" class="my-1 w-100 text-base bg-slate-300 rounded-sm border border-black focus:border-2 focus:border-blue-500 focus:outline-none">
+                </div>
+                <input type="button" value="Submit" class="w-100 text-base bg-slate-300 rounded-sm border-1 hover:border-2 hover:border-black hover:bg-blue-700 hover:text-white">
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
